@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="bg-navy-blue text-white">
             <h1 className="flex justify-center 4xl text-border gap-2"><span>Event</span><span className="text-blue-800">Hive</span></h1>
-            <form>
+            <form className="flex justify-center text-4xl">
                 <input type="email" placeholder="Enter your mail" name="email" />
                 <button type="submit">Subscribe</button>
             </form>
