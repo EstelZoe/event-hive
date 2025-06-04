@@ -17,13 +17,13 @@ function Footer() {
                 <span>FAQs</span>
             </div>
             <hr />
-            <div className="flex flex-row justify-around gap-10">
-                <div className="flex flex-row justify-evenly gap-4">
+            <div className="flex flex-row justify-center gap-10">
+                <div className="flex flex-row justify-evenly gap-4 py absolute left-0">
                     <button>English</button>
                     <button>French</button>
                     <button>Hindi</button>
                 </div>
-                <div className="flex flex-row gap-10 mt-5">
+                <div className="flex flex-row gap-2 mt-4 justify-center text-center">
                     <Linkedin />
                     <Instagram />
                     <Facebook />
@@ -31,7 +31,7 @@ function Footer() {
 
  
             </div>
-            <div className="flex flex-row justify-end py-4 gap-10">
+            <div className="flex flex-row py-4 ">
                 <p>Non Copyrighted© 2025 Upload By EventHive</p>
             </div>
 

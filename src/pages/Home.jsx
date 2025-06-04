@@ -10,8 +10,8 @@ export default function Home() {
             <section className="bg-[url(./assets/images/image.png)] h-[596px] by-cover w-[95%] mx-auto relative">
                 <h1 className="text-big-heading text-white w-[30%] mx-auto text-center pt-20">MADE FOR THOSE WHO DO</h1>
 
-                <form className="bg-navy-blue w-[90%] mx-auto flex flex-row justify-between py-6 px-10 rounded-md absolute -buttom-12 left-[5%]">
-                    <div className="flex flex-col">
+                <form className="bg-navy-blue w-[90%] mx-auto py-6  px-10 flex flex-row justify-between  absolute -bottom-12 left-[5%]">
+                    <div className="flex flex-col w-[30%]">
                         <label className="text-white" htmlFor="type">Looking for</label>
                         <select name="type" id="type" className="bg-white p-2 rounded-md">
                             <option selected disabled>Choose event type</option>
@@ -33,23 +33,33 @@ export default function Home() {
                         <label className="text-white" htmlFor="when">When</label>
                         <input type="datetime-local" name="when" id="when" className="bg-white 1.5 rounded-md" />
                     </div>
+                    <div className="text-white sixe-[40px] flex flex-row justify-center items-center bg-primary rounded-md px-2 py-2">
+                        <Search />
+                    </div>
+
                 </form>
+
             </section>
-            <section>
+            <section className="mt-20">
                 <div>
                     <h1>
-                        <span>Upcoming</span>
-                        <span>Events</span>
+                        <span className="uppercase text-2xl text-bolder m-2">Upcoming</span>
+                        <span className="uppercase text-2xl text-blue-600 text-bolder mb-2">Events</span>
                     </h1>
                 </div>
                 <div className="grid grid-cols-3 gap-5">
-                    {[1, 2, 3, 4, 5, 6.].map(n=> <EventCard key={n}/>)}
+                    {[1, 2, 3, 4, 5, 6.].map(n => <EventCard key={n} />)}
                 </div>
             </section>
 
             <section className="h-[200px]">
             </section>
- 
+
+
+
+
+
+
             <Footer />
         </>
 
